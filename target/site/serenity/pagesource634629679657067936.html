@@ -1,0 +1,805 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en" class=""&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;My Store&lt;/title&gt; <br/>
+  &lt;meta name="description" content="Shop powered by PrestaShop"&gt; <br/>
+  &lt;meta name="generator" content="PrestaShop"&gt; <br/>
+  &lt;meta name="robots" content="index,follow"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"&gt; <br/>
+  &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt; <br/>
+  &lt;link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1461205423"&gt; <br/>
+  &lt;link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1461205423"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/global.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/highdpi.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/responsive-tables.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/uniform.default.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockbanner/blockbanner.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/product_list.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcart/blockcart.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcategories/blockcategories.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcurrencies/blockcurrencies.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/modules/blockfacebook/css/blockfacebook.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcontact/blockcontact.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/autocomplete/jquery.autocomplete.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocksearch/blocksearch.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktags/blocktags.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockviewed/blockviewed.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/homeslider/homeslider.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/modules/themeconfigurator/css/hooks.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockwishlist/blockwishlist.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/productcomments/productcomments.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/modules/editorial/css/editorial.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css" type="text/css" media="all"&gt; <br/>
+  &lt;script src="https://connect.facebook.net/en_US/all.js?hash=1c689972467352a4a4d5289dc1b4b59e" async crossorigin="anonymous"&gt;&lt;/script&gt;<br/>
+  &lt;script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=334341610034299"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript"&gt;<br/>
+var CUSTOMIZE_TEXTFIELD = 1;<br/>
+var FancyboxI18nClose = 'Close';<br/>
+var FancyboxI18nNext = 'Next';<br/>
+var FancyboxI18nPrev = 'Previous';<br/>
+var added_to_wishlist = 'Added to your wishlist.';<br/>
+var ajax_allowed = true;<br/>
+var ajaxsearch = true;<br/>
+var baseDir = 'http://automationpractice.com/';<br/>
+var baseUri = 'http://automationpractice.com/index.php';<br/>
+var blocksearch_type = 'top';<br/>
+var contentOnly = false;<br/>
+var customizationIdMessage = 'Customization #';<br/>
+var delete_txt = 'Delete';<br/>
+var displayList = false;<br/>
+var freeProductTranslation = 'Free!';<br/>
+var freeShippingTranslation = 'Free shipping!';<br/>
+var generated_date = 1657035438;<br/>
+var homeslider_loop = 1;<br/>
+var homeslider_pause = 3000;<br/>
+var homeslider_speed = 500;<br/>
+var homeslider_width = 779;<br/>
+var id_lang = 1;<br/>
+var img_dir = 'http://automationpractice.com/themes/default-bootstrap/img/';<br/>
+var instantsearch = false;<br/>
+var isGuest = 0;<br/>
+var isLogged = 0;<br/>
+var loggin_required = 'You must be logged in to manage your wishlist.';<br/>
+var mywishlist_url = 'http://automationpractice.com/index.php?fc=module&module=blockwishlist&controller=mywishlist';<br/>
+var page_name = 'index';<br/>
+var placeholder_blocknewsletter = 'Enter your e-mail';<br/>
+var priceDisplayMethod = 1;<br/>
+var priceDisplayPrecision = 2;<br/>
+var quickView = true;<br/>
+var removingLinkText = 'remove this product from my cart';<br/>
+var roundMode = 2;<br/>
+var search_url = 'http://automationpractice.com/index.php?controller=search';<br/>
+var static_token = 'e817bb0705dd58da8db074c69f729fd8';<br/>
+var token = 'ce65cefcbafad255f0866d3b32d32058';<br/>
+var usingSecureMode = false;<br/>
+var wishlistProductsIds = false;<br/>
+&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.easing.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/tools.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/global.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/10-bootstrap.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/products-comparison.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blockcart/ajax-cart.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.serialScroll.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/bxslider/jquery.bxslider.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/tools/treeManagement.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/modules/blockfacebook/blockfacebook.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/autocomplete/jquery.autocomplete.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocksearch/blocksearch.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/homeslider/js/homeslider.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blockwishlist/js/ajax-wishlist.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/index.js"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all"&gt; &lt;!--[if IE 8]&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"&gt;&lt;/script&gt;<br/>
+		&lt;![endif]--&gt; <br/>
+  &lt;style type="text/css"&gt;.fancybox-margin{margin-right:17px;}&lt;/style&gt;<br/>
+  &lt;style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe"&gt;.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}<br/>
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}<br/>
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}<br/>
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}<br/>
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body id="index" class="index hide-left-column hide-right-column lang_en" style=""&gt; <br/>
+  &lt;div id="page"&gt; <br/>
+   &lt;div class="header-container"&gt; <br/>
+    &lt;header id="header"&gt; <br/>
+     &lt;div class="banner"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; &lt;a href="" title=""&gt; &lt;img class="img-responsive" src="http://automationpractice.com/modules/blockbanner/img/sale70.png" alt="" title="" width="1170" height="65"&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="nav"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;nav&gt;<br/>
+         &lt;!-- Block user information module NAV  --&gt; <br/>
+         &lt;div class="header_user_info"&gt; &lt;a class="login" href="http://automationpractice.com/index.php?controller=my-account" rel="nofollow" title="Log in to your customer account"&gt; Sign in &lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;!-- /Block usmodule NAV --&gt; &lt;!-- Block languages module --&gt; &lt;!-- /Block languages module --&gt; <br/>
+         &lt;div id="contact-link"&gt; &lt;a href="http://automationpractice.com/index.php?controller=contact" title="Contact Us"&gt;Contact us&lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;span class="shop-phone"&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;strong&gt;0123-456-789&lt;/strong&gt; &lt;/span&gt; <br/>
+        &lt;/nav&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;div id="header_logo"&gt; &lt;a href="http://automationpractice.com/" title="My Store"&gt; &lt;img class="logo img-responsive" src="http://automationpractice.com/img/logo.jpg" alt="My Store" width="350" height="99"&gt; &lt;/a&gt; <br/>
+        &lt;/div&gt; &lt;!-- Block search module TOP --&gt; <br/>
+        &lt;div id="search_block_top" class="col-sm-4 clearfix"&gt; <br/>
+         &lt;form id="searchbox" method="get" action="http://automationpractice.com/index.php?controller=search"&gt; <br/>
+          &lt;input type="hidden" name="controller" value="search"&gt; <br/>
+          &lt;input type="hidden" name="orderby" value="position"&gt; <br/>
+          &lt;input type="hidden" name="orderway" value="desc"&gt; <br/>
+          &lt;input class="search_query form-control ac_input" type="text" id="search_query_top" name="search_query" placeholder="Search" value="" autocomplete="off"&gt; &lt;button type="submit" name="submit_search" class="btn btn-default button-search"&gt; &lt;span&gt;Search&lt;/span&gt; &lt;/button&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; &lt;!-- /Block search module TOP --&gt;&lt;!-- MODULE Block cart --&gt; <br/>
+        &lt;div class="col-sm-4 clearfix"&gt; <br/>
+         &lt;div class="shopping_cart"&gt; &lt;a href="http://automationpractice.com/index.php?controller=order" title="View my shopping cart" rel="nofollow"&gt; &lt;b&gt;Cart&lt;/b&gt; &lt;span class="ajax_cart_quantity unvisible"&gt;0&lt;/span&gt; &lt;span class="ajax_cart_product_txt unvisible"&gt;Product&lt;/span&gt; &lt;span class="ajax_cart_product_txt_s unvisible"&gt;Products&lt;/span&gt; &lt;span class="ajax_cart_total unvisible"&gt; &lt;/span&gt; &lt;span class="ajax_cart_no_product"&gt;(empty)&lt;/span&gt; &lt;/a&gt; <br/>
+          &lt;div class="cart_block block exclusive"&gt; <br/>
+           &lt;div class="block_content"&gt; &lt;!-- block list of products --&gt; <br/>
+            &lt;div class="cart_block_list"&gt; <br/>
+             &lt;p class="cart_block_no_products"&gt; No products &lt;/p&gt; <br/>
+             &lt;div class="cart-prices"&gt; <br/>
+              &lt;div class="cart-prices-line first-line"&gt; &lt;span class="price cart_block_shipping_cost ajax_cart_shipping_cost"&gt; Free shipping! &lt;/span&gt; &lt;span&gt; Shipping &lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="cart-prices-line last-line"&gt; &lt;span class="price cart_block_total ajax_block_cart_total"&gt;$0.00&lt;/span&gt; &lt;span&gt;Total&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;p class="cart-buttons"&gt; &lt;a id="button_order_cart" class="btn btn-default button button-small" href="http://automationpractice.com/index.php?controller=order" title="Check out" rel="nofollow"&gt; &lt;span&gt; Check out&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; &lt;/p&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .cart_block --&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="layer_cart"&gt; <br/>
+         &lt;div class="clearfix"&gt; <br/>
+          &lt;div class="layer_cart_product col-xs-12 col-md-6"&gt; &lt;span class="cross" title="Close window"&gt;&lt;/span&gt; <br/>
+           &lt;h2&gt; &lt;i class="icon-ok"&gt;&lt;/i&gt;Product successfully added to your shopping cart &lt;/h2&gt; <br/>
+           &lt;div class="product-image-container layer_cart_img"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_product_info"&gt; &lt;span id="layer_cart_product_title" class="product-name"&gt;&lt;/span&gt; &lt;span id="layer_cart_product_attributes"&gt;&lt;/span&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Quantity&lt;/strong&gt; &lt;span id="layer_cart_product_quantity"&gt;&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Total&lt;/strong&gt; &lt;span id="layer_cart_product_price"&gt;&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="layer_cart_cart col-xs-12 col-md-6"&gt; <br/>
+           &lt;h2&gt; &lt;!-- Plural Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt_s  unvisible"&gt; There are &lt;span class="ajax_cart_quantity"&gt;0&lt;/span&gt; items in your cart. &lt;/span&gt; &lt;!-- Singular Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt "&gt; There is 1 item in your cart. &lt;/span&gt; &lt;/h2&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total products &lt;/strong&gt; &lt;span class="ajax_block_products_total"&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total shipping&nbsp; &lt;/strong&gt; &lt;span class="ajax_cart_shipping_cost"&gt; Free shipping! &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total &lt;/strong&gt; &lt;span class="ajax_block_cart_total"&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container"&gt; &lt;span class="continue btn btn-default button exclusive-medium" title="Continue shopping"&gt; &lt;span&gt; &lt;i class="icon-chevron-left left"&gt;&lt;/i&gt;Continue shopping &lt;/span&gt; &lt;/span&gt; &lt;a class="btn btn-default button button-medium" href="http://automationpractice.com/index.php?controller=order" title="Proceed to checkout" rel="nofollow"&gt; &lt;span&gt; Proceed to checkout&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="crossseling"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- #layer_cart --&gt; <br/>
+        &lt;div class="layer_cart_overlay"&gt;&lt;/div&gt; &lt;!-- /MODULE Block cart --&gt; &lt;!-- Menu --&gt; <br/>
+        &lt;div id="block_top_menu" class="sf-contener clearfix col-lg-12"&gt; <br/>
+         &lt;div class="cat-title"&gt;<br/>
+          Categories<br/>
+         &lt;/div&gt; <br/>
+         &lt;ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows"&gt; <br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category" title="Women" class="sf-with-ul"&gt;Women&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=4&amp;controller=category" title="Tops" class="sf-with-ul"&gt;Tops&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=7&amp;controller=category" title="Blouses"&gt;Blouses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li id="category-thumbnail"&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.com/img/c/3-0_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.com/img/c/3-1_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; &lt;!--/ Menu --&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/header&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="columns-container"&gt; <br/>
+    &lt;div id="columns" class="container"&gt; <br/>
+     &lt;div id="slider_row" class="row"&gt; <br/>
+      &lt;div id="top_column" class="center_column col-xs-12 col-sm-12"&gt;<br/>
+       &lt;!-- Module HomeSlider --&gt; <br/>
+       &lt;div id="homepage-slider" class="col-xs-8"&gt; <br/>
+        &lt;div class="bx-wrapper" style="max-width: 779px; margin: 0px auto;"&gt;<br/>
+         &lt;div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 448px;"&gt;<br/>
+          &lt;ul id="homeslider" style="max-height: 448px; width: 515%; position: relative; left: -779px;"&gt;<br/>
+           &lt;li class="homeslider-container bx-clone" style="float: left; list-style: none; position: relative; width: 779px;"&gt; &lt;a href="http://www.prestashop.com/?utm_source=v16_homeslider" title="sample-3"&gt; &lt;img src="http://automationpractice.com/modules/homeslider/images/sample-3.jpg" width="779" height="448" alt="sample-3"&gt; &lt;/a&gt; <br/>
+            &lt;div class="homeslider-description"&gt;<br/>
+             &lt;h2&gt;EXCEPTEUR&lt;br&gt;OCCAECAT&lt;/h2&gt; <br/>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit&lt;/p&gt; <br/>
+             &lt;p&gt;&lt;button class="btn btn-default" type="button"&gt;Shop now !&lt;/button&gt;&lt;/p&gt;<br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li class="homeslider-container" style="float: left; list-style: none; position: relative; width: 779px;"&gt; &lt;a href="http://www.prestashop.com/?utm_source=v16_homeslider" title="sample-1"&gt; &lt;img src="http://automationpractice.com/modules/homeslider/images/sample-1.jpg" width="779" height="448" alt="sample-1"&gt; &lt;/a&gt; <br/>
+            &lt;div class="homeslider-description"&gt;<br/>
+             &lt;h2&gt;EXCEPTEUR&lt;br&gt;OCCAECAT&lt;/h2&gt; <br/>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit&lt;/p&gt; <br/>
+             &lt;p&gt;&lt;button class="btn btn-default" type="button"&gt;Shop now !&lt;/button&gt;&lt;/p&gt;<br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li class="homeslider-container" style="float: left; list-style: none; position: relative; width: 779px;"&gt; &lt;a href="http://www.prestashop.com/?utm_source=v16_homeslider" title="sample-2"&gt; &lt;img src="http://automationpractice.com/modules/homeslider/images/sample-2.jpg" width="779" height="448" alt="sample-2"&gt; &lt;/a&gt; <br/>
+            &lt;div class="homeslider-description"&gt;<br/>
+             &lt;h2&gt;EXCEPTEUR&lt;br&gt;OCCAECAT&lt;/h2&gt; <br/>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit&lt;/p&gt; <br/>
+             &lt;p&gt;&lt;button class="btn btn-default" type="button"&gt;Shop now !&lt;/button&gt;&lt;/p&gt;<br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li class="homeslider-container" style="float: left; list-style: none; position: relative; width: 779px;"&gt; &lt;a href="http://www.prestashop.com/?utm_source=v16_homeslider" title="sample-3"&gt; &lt;img src="http://automationpractice.com/modules/homeslider/images/sample-3.jpg" width="779" height="448" alt="sample-3"&gt; &lt;/a&gt; <br/>
+            &lt;div class="homeslider-description"&gt;<br/>
+             &lt;h2&gt;EXCEPTEUR&lt;br&gt;OCCAECAT&lt;/h2&gt; <br/>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit&lt;/p&gt; <br/>
+             &lt;p&gt;&lt;button class="btn btn-default" type="button"&gt;Shop now !&lt;/button&gt;&lt;/p&gt;<br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li class="homeslider-container bx-clone" style="float: left; list-style: none; position: relative; width: 779px;"&gt; &lt;a href="http://www.prestashop.com/?utm_source=v16_homeslider" title="sample-1"&gt; &lt;img src="http://automationpractice.com/modules/homeslider/images/sample-1.jpg" width="779" height="448" alt="sample-1"&gt; &lt;/a&gt; <br/>
+            &lt;div class="homeslider-description"&gt;<br/>
+             &lt;h2&gt;EXCEPTEUR&lt;br&gt;OCCAECAT&lt;/h2&gt; <br/>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit&lt;/p&gt; <br/>
+             &lt;p&gt;&lt;button class="btn btn-default" type="button"&gt;Shop now !&lt;/button&gt;&lt;/p&gt;<br/>
+            &lt;/div&gt; &lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="bx-controls bx-has-controls-direction"&gt;<br/>
+          &lt;div class="bx-controls-direction"&gt;<br/>
+           &lt;a class="bx-prev" href=""&gt;Prev&lt;/a&gt;&lt;a class="bx-next" href=""&gt;Next&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- /Module HomeSlider --&gt; <br/>
+       &lt;div id="htmlcontent_top"&gt; <br/>
+        &lt;ul class="htmlcontent-home clearfix row"&gt; <br/>
+         &lt;li class="htmlcontent-item-1 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img6.jpg" class="item-img" title="" alt="" width="381" height="219"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="htmlcontent-item-2 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img7.jpg" class="item-img" title="" alt="" width="381" height="219"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div id="center_column" class="center_column col-xs-12 col-sm-12"&gt; <br/>
+       &lt;ul id="home-page-tabs" class="nav nav-tabs clearfix"&gt; <br/>
+        &lt;li class="active"&gt;&lt;a data-toggle="tab" href="#homefeatured" class="homefeatured"&gt;Popular&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers"&gt;Best Sellers&lt;/a&gt;&lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+       &lt;div class="tab-content"&gt; &lt;!-- Products list --&gt; <br/>
+        &lt;ul id="homefeatured" class="product_list grid row homefeatured tab-pane active"&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/1-home_default.jpg" alt="Faded Short Sleeve T-shirts" title="Faded Short Sleeve T-shirts" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=1&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=1&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; Faded Short Sleeve T-shirts &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Faded short sleeve t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer! &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=1&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="Blouse" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/7/7-home_default.jpg" alt="Blouse" title="Blouse" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=2&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=2&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="Blouse" itemprop="url"&gt; Blouse &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Short sleeved blouse with feminine draped sleeve detail. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=2&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="2"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/8/8-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=3&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=3&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; 100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=3&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="3"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/0/10-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=4&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=4&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Printed evening dress with straight sleeves with black thin waist belt and ruffled linings. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=4&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="4"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/2/12-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=5&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=5&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $28.98 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $28.98 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=5&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="5"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line last-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/6/16-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=6&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=6&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Sleeveless knee-length chiffon dress. V-neckline with elastic under the bust lining. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=6&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="6"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="Printed Chiffon Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/2/0/20-home_default.jpg" alt="Printed Chiffon Dress" title="Printed Chiffon Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=7&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=7&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.40 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="Printed Chiffon Dress" itemprop="url"&gt; Printed Chiffon Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Printed chiffon knee length dress with tank straps. Deep v-neckline. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.40 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=7&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="7"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;!-- Products list --&gt; <br/>
+        &lt;ul id="blockbestsellers" class="product_list grid row blockbestsellers tab-pane"&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="Printed Chiffon Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/2/0/20-home_default.jpg" alt="Printed Chiffon Dress" title="Printed Chiffon Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=7&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=7&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.40 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="Printed Chiffon Dress" itemprop="url"&gt; Printed Chiffon Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Printed chiffon knee length dress with tank straps. Deep v-neckline. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.40 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $20.50 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-20%&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=7&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="7"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=7&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/1-home_default.jpg" alt="Faded Short Sleeve T-shirts" title="Faded Short Sleeve T-shirts" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=1&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=1&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="Faded Short Sleeve T-shirts" itemprop="url"&gt; Faded Short Sleeve T-shirts &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Faded short sleeve t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer! &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $16.51 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=1&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="1"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=1&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="Blouse" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/7/7-home_default.jpg" alt="Blouse" title="Blouse" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=2&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=2&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="Blouse" itemprop="url"&gt; Blouse &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Short sleeved blouse with feminine draped sleeve detail. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $27.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=2&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="2"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=2&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/2/12-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=5&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=5&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $28.98 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $28.98 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; &lt;span class="old-price product-price"&gt; $30.51 &lt;/span&gt; &lt;span class="price-percent-reduction"&gt;-5%&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=5&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="5"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=5&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; &lt;span class="discount"&gt;Reduced price!&lt;/span&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line first-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/8/8-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=3&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=3&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; 100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $26.00 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=3&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="3"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=3&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line last-item-of-tablet-line last-item-of-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/6/16-home_default.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=6&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=6&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="Printed Summer Dress" itemprop="url"&gt; Printed Summer Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Sleeveless knee-length chiffon dress. V-neckline with elastic under the bust lining. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $30.50 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=6&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="6"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=6&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+         &lt;li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line"&gt; <br/>
+          &lt;div class="product-container" itemscope itemtype="http://schema.org/Product"&gt; <br/>
+           &lt;div class="left-block"&gt; <br/>
+            &lt;div class="product-image-container"&gt; &lt;a class="product_img_link" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="Printed Dress" itemprop="url"&gt; &lt;img class="replace-2x img-responsive" src="http://automationpractice.com/img/p/1/0/10-home_default.jpg" alt="Printed Dress" title="Printed Dress" width="250" height="250" itemprop="image"&gt; &lt;/a&gt; <br/>
+             &lt;div class="quick-view-wrapper-mobile"&gt; &lt;a class="quick-view-mobile" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=4&amp;controller=product"&gt; &lt;i class="icon-eye-open"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+             &lt;/div&gt; &lt;a class="quick-view" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" rel="http://automationpractice.com/index.php?id_product=4&amp;controller=product"&gt; &lt;span&gt;Quick view&lt;/span&gt; &lt;/a&gt; <br/>
+             &lt;div class="content_price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt; &lt;span itemprop="price" class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+              &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="right-block"&gt; <br/>
+            &lt;h5 itemprop="name"&gt; &lt;a class="product-name" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="Printed Dress" itemprop="url"&gt; Printed Dress &lt;/a&gt; &lt;/h5&gt; <br/>
+            &lt;p class="product-desc" itemprop="description"&gt; Printed evening dress with straight sleeves with black thin waist belt and ruffled linings. &lt;/p&gt; <br/>
+            &lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price"&gt; &lt;span itemprop="price" class="price product-price"&gt; $50.99 &lt;/span&gt; <br/>
+             &lt;meta itemprop="priceCurrency" content="USD"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="button-container"&gt; &lt;a class="button ajax_add_to_cart_button btn btn-default" href="http://automationpractice.com/index.php?controller=cart&amp;add=1&amp;id_product=4&amp;token=e817bb0705dd58da8db074c69f729fd8" rel="nofollow" title="Add to cart" data-id-product="4"&gt; &lt;span&gt;Add to cart&lt;/span&gt; &lt;/a&gt; &lt;a itemprop="url" class="button lnk_view btn btn-default" href="http://automationpractice.com/index.php?id_product=4&amp;controller=product" title="View"&gt; &lt;span&gt;More&lt;/span&gt; &lt;/a&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="product-flags"&gt; <br/>
+            &lt;/div&gt; &lt;span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="availability"&gt; &lt;span class="available-now"&gt; <br/>
+              &lt;link itemprop="availability" href="http://schema.org/InStock"&gt;In stock &lt;/span&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .product-container&gt; --&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="clearfix"&gt;<br/>
+        &lt;div id="htmlcontent_home"&gt; <br/>
+         &lt;ul class="htmlcontent-home clearfix row"&gt; <br/>
+          &lt;li class="htmlcontent-item-1 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img1.jpg" class="item-img" title="" alt="" width="383" height="267"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li class="htmlcontent-item-2 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img2.jpg" class="item-img" title="" alt="" width="383" height="267"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li class="htmlcontent-item-3 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img3.jpg" class="item-img" title="" alt="" width="383" height="267"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li class="htmlcontent-item-4 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img4.jpg" class="item-img" title="" alt="" width="383" height="142"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;li class="htmlcontent-item-5 col-xs-4"&gt; &lt;a href="http://www.prestashop.com/" class="item-link" title=""&gt; &lt;img src="http://automationpractice.com/modules/themeconfigurator/img/banner-img5.jpg" class="item-img" title="" alt="" width="777" height="142"&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="fb-root" class=" fb_reset"&gt;<br/>
+         &lt;div style="position: absolute; top: -10000px; width: 0px; height: 0px;"&gt;<br/>
+          &lt;div&gt;&lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="facebook_block" class="col-xs-4"&gt; <br/>
+         &lt;h4&gt;Follow us on Facebook&lt;/h4&gt; <br/>
+         &lt;div class="facebook-fanbox"&gt; <br/>
+          &lt;div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/prestashop" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=334341610034299&amp;color_scheme=light&amp;container_width=330&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprestashop&amp;locale=es_LA&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"&gt;<br/>
+           &lt;span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"&gt;&lt;iframe name="f325a6a944a9504" width="1000px" height="1000px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=334341610034299&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df175e9604384ebc%26domain%3Dautomationpractice.com%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Fautomationpractice.com%252Ff1233ced6c009c%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=330&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprestashop&amp;locale=es_LA&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" style="border: none; visibility: hidden;"&gt;&lt;/iframe&gt;&lt;/span&gt;<br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- MODULE Block cmsinfo --&gt; <br/>
+        &lt;div id="cmsinfo_block"&gt; <br/>
+         &lt;div class="col-xs-6"&gt;<br/>
+          &lt;p&gt; &lt;/p&gt; <br/>
+          &lt;ul&gt;<br/>
+           &lt;li&gt;&lt;em class="icon-truck" id="icon-truck"&gt;&lt;/em&gt; <br/>
+            &lt;div class="type-text"&gt; <br/>
+             &lt;h3&gt;Come Visit Us&lt;/h3&gt; <br/>
+             &lt;p&gt;We are located in Research Triangle Park, North Carolina, USA&lt;/p&gt; <br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li&gt;&lt;em class="icon-phone" id="icon-phone"&gt;&lt;/em&gt; <br/>
+            &lt;div class="type-text"&gt; <br/>
+             &lt;h3&gt;Call Us&lt;/h3&gt; <br/>
+             &lt;p&gt;We appreciate your call. Please visit&nbsp; &lt;a class="btn btn-default" href="http://www.seleniumframework.com"&gt;Selenium Framework&lt;/a&gt;&lt;/p&gt; <br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+           &lt;li&gt;&lt;em class="icon-credit-card" id="icon-credit-card"&gt;&lt;/em&gt; <br/>
+            &lt;div class="type-text"&gt; <br/>
+             &lt;h3&gt;How to Pay dues&lt;/h3&gt; <br/>
+             &lt;p&gt;You can pay us by calling or use our online pay channels&lt;/p&gt; <br/>
+            &lt;/div&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="col-xs-6"&gt;<br/>
+          &lt;h3&gt;Custom Block&lt;/h3&gt; <br/>
+          &lt;p&gt;&lt;strong class="dark"&gt;This is a custom block of text&lt;br&gt;&lt;/strong&gt;&lt;/p&gt; <br/>
+          &lt;p&gt;Selenium Framework website was designed solely to help folks get over the fear of Automation. The website was an inspiration from the fact that there is no website that can bridge the gaps between the differences among various programming languages and help non-programmers get a taste of Automation. &lt;/p&gt;<br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- /MODULE Block cmsinfo --&gt; &lt;!-- Module Editorial --&gt; <br/>
+        &lt;div id="editorial_block_center" class="editorial_block"&gt; &lt;a href="htdtp://www.automationpractice.com" title="Automation Practice Website"&gt; &lt;/a&gt; <br/>
+         &lt;p id="editorial_image_legend"&gt;Subsidiary of seleniumframework.com&lt;/p&gt; <br/>
+         &lt;h1&gt;Automation Practice Website&lt;/h1&gt; <br/>
+         &lt;h2&gt;Practice Selenium &lt;/h2&gt; <br/>
+         &lt;div class="rte"&gt;<br/>
+          &lt;p&gt;This sample ecommerce website is being used by www.seleniumframework.com website to help pracitce exercises on a real-time ecommerce website. Different workflows for adding products to cart, checking out car, making payments etc. workflows will be automated using Automation scripts and this website is a candidate for the same. Please contact support@seleniumframework.com for any further questions. Thanks.&lt;/p&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt; &lt;!-- /Module Editorial --&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt;&lt;!-- #center_column --&gt; <br/>
+     &lt;/div&gt;&lt;!-- .row --&gt; <br/>
+    &lt;/div&gt;&lt;!-- #columns --&gt; <br/>
+   &lt;/div&gt;&lt;!-- .columns-container --&gt; &lt;!-- Footer --&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;footer id="footer" class="container"&gt; <br/>
+     &lt;div class="row"&gt;<br/>
+      &lt;!-- Block Newsletter module--&gt; <br/>
+      &lt;div id="newsletter_block_left" class="block"&gt; <br/>
+       &lt;h4&gt;Newsletter&lt;/h4&gt; <br/>
+       &lt;div class="block_content"&gt; <br/>
+        &lt;form action="http://automationpractice.com/index.php" method="post"&gt; <br/>
+         &lt;div class="form-group"&gt; <br/>
+          &lt;input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Enter your e-mail"&gt; &lt;button type="submit" name="submitNewsletter" class="btn btn-default button button-small"&gt; &lt;span&gt;Ok&lt;/span&gt; &lt;/button&gt; <br/>
+          &lt;input type="hidden" name="action" value="0"&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/form&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;!-- /Block Newsletter module--&gt; <br/>
+      &lt;section id="social_block"&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li class="facebook"&gt; &lt;a target="_blank" href="https://www.facebook.com/groups/525066904174158/"&gt; &lt;span&gt;Facebook&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="twitter"&gt; &lt;a target="_blank" href="https://twitter.com/seleniumfrmwrk"&gt; &lt;span&gt;Twitter&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="youtube"&gt; &lt;a target="_blank" href="https://www.youtube.com/channel/UCHl59sI3SRjQ-qPcTrgt0tA"&gt; &lt;span&gt;Youtube&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="google-plus"&gt; &lt;a target="_blank" href="https://plus.google.com/111979135243110831526/posts"&gt; &lt;span&gt;Google Plus&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+       &lt;h4&gt;Follow us&lt;/h4&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;div class="clearfix"&gt;&lt;/div&gt; &lt;!-- Block categories module --&gt; <br/>
+      &lt;section class="blockcategories_footer footer-block col-xs-12 col-sm-2"&gt; <br/>
+       &lt;h4&gt;Categories&lt;/h4&gt; <br/>
+       &lt;div class="category_footer toggle-footer" style=""&gt; <br/>
+        &lt;div class="list"&gt; <br/>
+         &lt;ul class="tree dynamized" style="display: block;"&gt; <br/>
+          &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category" title="You will find here all woman fashion collections.  <br/>
+ This category includes all the basics of your wardrobe and much more: <br/>
+ shoes, accessories, printed t-shirts, feminine dresses, women's jeans!"&gt; Women &lt;/a&gt; <br/>
+           &lt;ul style="display: none;"&gt; <br/>
+            &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=4&amp;controller=category" title="Choose from t-shirts, tops, blouses, short sleeves, long sleeves, tank tops, 3/4 sleeves and more. <br/>
+ Find the cut that suits you the best!"&gt; Tops &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="The must have of your wardrobe, take a look at our different colors, <br/>
+ shapes and style of our collection!"&gt; T-shirts &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.com/index.php?id_category=7&amp;controller=category" title="Match your favorites blouses with the right accessories for the perfect look."&gt; Blouses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+            &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Find your favorites dresses from our wide choice of evening, casual or summer dresses! <br/>
+ We offer dresses for every day, every style and every occasion."&gt; Dresses &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="You are looking for a dress for every day? Take a look at <br/>
+ our selection of dresses to find one that suits you."&gt; Casual Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Browse our different dresses to choose the perfect dress for an unforgettable evening!"&gt; Evening Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Short dress, long dress, silk dress, printed dress, you will find the perfect dress for summer."&gt; Summer Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- .category_footer --&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block categories module --&gt; &lt;!-- MODULE Block footer --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer"&gt; <br/>
+       &lt;h4&gt;Information&lt;/h4&gt; <br/>
+       &lt;ul class="toggle-footer" style=""&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=prices-drop" title="Specials"&gt; Specials &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=new-products" title="New products"&gt; New products &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=best-sales" title="Best sellers"&gt; Best sellers &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=stores" title="Our stores"&gt; Our stores &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=contact" title="Contact us"&gt; Contact us &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?id_cms=3&amp;controller=cms" title="Terms and conditions of use"&gt; Terms and conditions of use &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?id_cms=4&amp;controller=cms" title="About us"&gt; About us &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?controller=sitemap" title="Sitemap"&gt; Sitemap &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;section class="bottom-footer col-xs-12"&gt; <br/>
+       &lt;div&gt;<br/>
+         © 2014 &lt;a class="_blank" href="http://www.prestashop.com" target="_blank"&gt;Ecommerce software by PrestaShop™&lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block footer --&gt; &lt;!-- Block myaccount module --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;h4&gt;&lt;a href="http://automationpractice.com/index.php?controller=my-account" title="Manage my customer account" rel="nofollow"&gt;My account&lt;/a&gt;&lt;/h4&gt; <br/>
+       &lt;div class="block_content toggle-footer" style=""&gt; <br/>
+        &lt;ul class="bullet"&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=history" title="My orders" rel="nofollow"&gt;My orders&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=order-slip" title="My credit slips" rel="nofollow"&gt;My credit slips&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=addresses" title="My addresses" rel="nofollow"&gt;My addresses&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=identity" title="Manage my personal information" rel="nofollow"&gt;My personal info&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block myaccount module --&gt; &lt;!-- MODULE Block contact infos --&gt; <br/>
+      &lt;section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;div&gt; <br/>
+        &lt;h4&gt;Store information&lt;/h4&gt; <br/>
+        &lt;ul class="toggle-footer" style=""&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-map-marker"&gt;&lt;/i&gt;Selenium Framework, Research Triangle Park, North Carolina, USA &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;span&gt;(347) 466-7432&lt;/span&gt; &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-envelope-alt"&gt;&lt;/i&gt;Email: &lt;span&gt;&lt;a href="mailto:%73%75%70%70%6f%72%74@%73%65%6c%65%6e%69%75%6d%66%72%61%6d%65%77%6f%72%6b.%63%6f%6d"&gt;support@seleniumframework.com&lt;/a&gt;&lt;/span&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block contact infos --&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/footer&gt; <br/>
+   &lt;/div&gt;&lt;!-- #footer --&gt; <br/>
+  &lt;/div&gt;&lt;!-- #page --&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
